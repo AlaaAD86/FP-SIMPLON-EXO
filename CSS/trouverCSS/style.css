@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(53, 42, 65);
+    max-height: 100px;
+}
+
+h1{
+    font-size: 25px;
+    position: relative;
+    z-index: 5;
+    color: antiquewhite;
+    text-align: center;
+}
+#wrap {
+    width: 100%;
+    margin: 50px auto;
+    max-height: 100vh;
+}
+#one {
+    height: 250px;
+    background: #F00;
+    width: 550px;
+}
+#two {
+    position: absolute;
+    height: 250px;
+    width: 650px;
+    margin-top: -250px;
+    background: #000;
+    margin-left: 580px;
+}
+.seven {
+    float: right;
+    width: 58px;
+    height: 200px;
+    margin-top: -280px;
+    background: #FF0;
+}
+
+.row2{
+    margin: auto;
+    width: 60%;
+    margin-top: 1%;
+}
+#three {
+    height: 250px;
+    background: rgb(61, 133, 241);
+    width: 350px;
+}
+#four {
+    position: absolute;
+    height: 250px;
+    width: 350px;
+    margin-top: -250px;
+    background: #000;
+    margin-left: 380px;
+}
+
+
+.row3{
+
+    margin: auto;
+    width: 100%;
+    margin-top: 1%;
+}
+
+#five {
+    position: fixed;
+    float: left;
+    width: 200px;
+    height: 125px;
+    background: rgb(255, 22, 243);
+    bottom: 0;
+}
+#six {
+    position: fixed;
+  
+    height: 25px;
+    width: 350px;
+    background: #000;
+    margin-left: 380px;
+    bottom: 0;
+}
+
+#eight {
+    position: fixed;
+    margin-left: 75%; 
+    width: 400px;
+    height: 90px;
+    background: #FF0;
+    bottom: 0;
+}

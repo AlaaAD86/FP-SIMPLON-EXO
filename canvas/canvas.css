@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.canvas {
+    border: black 5px solid;
+}
+
+
+/* Si on rajoute des proprietes de Height et Width; qu'est ce passe t-il?  */
+/* En fai, il va ne faire que un zoom sur cette box et tout ce q on va faire dans cet espace va etre pexilisé */
+/* donc c'est mieux de modifier le W et H en javascript */
+
+/* tout ce q on va faire  -  ensemble si vous voulez - sera dans le fichier de JS  */
+/* ... Le css ne sert  que pour definir notre espace de travail */

@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+}
+
+
+video {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.chanson {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    z-index: 1;
+    margin: auto;
+    top: 0;
+    right: 0;
+    margin-right: 10%;
+    margin-top: 5%;
+   
+}
+
+h1 {
+    text-align: center;
+    text-align: center;
+    color: beige;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: beige;
+    margin: auto;
+    line-height: 20px;
+    top: 0;
+}

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+ 
+</head>
+
+<body>
+    <form id="col">
+        <input type="radio" name="ccolor" value="red" onclick="changeclr(this)"> A
+        <input type="radio" name="ccolor" value="blue" onclick="changeclr(this)"> B
+        <input type="radio" name="ccolor" value="white" onclick="changeclr(this)"> C
+        <form>
+
+
+<!-- 
+
+<script>
+    function changeColor(e){
+    var el = e.target;
+
+    switch (el.nextSibling.nodeValue.toLowerCase()[0]){
+        case 'a':
+            this.style.color = "#f00";
+        break;
+
+        case 'b':
+            this.style.color = "#ccc";
+        break;
+
+        case 'c':
+            this.style.color = "#00f";
+        break;
+    }
+}
+    document.getElementById('col').addEventListener('change',changeColor, true);
+    
+    </script> -->
+
+
+    <script language="javascript">
+            function changeclr(obj)
+            {
+                document.body.style.backgroundColor=obj.value;
+            }
+            </script>
+</body>
+
+</html>

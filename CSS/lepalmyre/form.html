@@ -1,0 +1,397 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.13076" type="text/javascript"></script>
+<script type="text/javascript">
+	JotForm.init(function(){
+      setTimeout(function() {
+          $('input_21').hint('ex: myname@example.com');
+       }, 20);
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("5", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.setCalendar("5", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""});
+ JotForm.formatDate({date:(new Date()), dateField:$("id_"+5)});
+ JotForm.displayLocalTime("hour_5", "min_5", "ampm_5");
+    /*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"1","qid":"1","text":"Submit Form","type":"control_button"},null,null,null,{"name":"date","qid":"5","text":"Date:","type":"control_datetime"},{"name":"phone","qid":"6","text":"Phone:","type":"control_textbox"},{"name":"anySpecial","qid":"7","text":"Any Special Request?","type":"control_textarea"},null,null,null,null,{"name":"time","qid":"12","text":"Time:","type":"control_dropdown"},{"name":"tableReservation","qid":"13","text":"Table Reservation:","type":"control_dropdown"},null,null,{"name":"reservationType","qid":"16","text":"Reservation Type:","type":"control_dropdown"},{"name":"numberOf","qid":"17","text":"Number of Guests:","type":"control_textbox"},{"name":"katraReservation","qid":"18","text":"Reservation Form","type":"control_head"},null,{"name":"fullName","qid":"20","text":"Full Name:","type":"control_fullname"},{"name":"email","qid":"21","text":"E-mail:","type":"control_email"},{"name":"ifOther","qid":"22","text":"If Other above, please specify?","type":"control_textbox"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"1","qid":"1","text":"Submit Form","type":"control_button"},null,null,null,{"name":"date","qid":"5","text":"Date:","type":"control_datetime"},{"name":"phone","qid":"6","text":"Phone:","type":"control_textbox"},{"name":"anySpecial","qid":"7","text":"Any Special Request?","type":"control_textarea"},null,null,null,null,{"name":"time","qid":"12","text":"Time:","type":"control_dropdown"},{"name":"tableReservation","qid":"13","text":"Table Reservation:","type":"control_dropdown"},null,null,{"name":"reservationType","qid":"16","text":"Reservation Type:","type":"control_dropdown"},{"name":"numberOf","qid":"17","text":"Number of Guests:","type":"control_textbox"},{"name":"katraReservation","qid":"18","text":"Reservation Form","type":"control_head"},null,{"name":"fullName","qid":"20","text":"Full Name:","type":"control_fullname"},{"name":"email","qid":"21","text":"E-mail:","type":"control_email"},{"name":"ifOther","qid":"22","text":"If Other above, please specify?","type":"control_textbox"}]);}, 20); 
+</script>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.13076" rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.13076" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.13076" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=5d713a7304e9ed3c13620001"/>
+<style type="text/css">
+@import '//fonts.googleapis.com/css?family=Cantarell:light,lightitalic,normal,italic,bold,bolditalic';
+
+    .form-label-left{
+        width:155px;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:155px;
+    }
+    .form-all{
+        width:790px;
+        color:#ffffff !important;
+        font-family:'Cantarell';
+        font-size:14px;
+    }
+    .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+        color: false;
+    }
+
+</style>
+
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Cantarell, sans-serif;
+    }
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-family: Cantarell, sans-serif;
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-family: Cantarell, sans-serif;
+    }
+    .form-header-group {
+      font-family: Cantarell, sans-serif;
+    }
+    .form-label {
+      font-family: Cantarell, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: inline-block;
+    float: left;
+    text-align: left;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px 36px 12px 36px px;
+      margin-bottom: 12px 36px 12px 36px px;
+    }
+  
+    .form-all {
+      width: 790px;
+    }
+  
+    .form-label-left,
+    .form-label-right,
+    .form-label-left.form-label-auto,
+    .form-label-right.form-label-auto {
+      width: 155px;
+    }
+  
+    .form-all {
+      font-size: 14pxpx
+    }
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-size: 14pxpx
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-size: 14pxpx
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #775000;
+      border: 1px solid transparent;
+    }
+  
+    .form-all {
+      color: #ffffff;
+    }
+    .form-header-group .form-header {
+      color: #ffffff;
+    }
+    .form-header-group .form-subHeader {
+      color: #ffffff;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label {
+      color: #ffffff;
+    }
+    .form-sub-label {
+      color: #ffffff;
+    }
+  
+    .supernova {
+      background-color: rgba(255,190,80,0.61);
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+    .supernova {
+      background-image: none;
+    }
+    #stage {
+      background-image: none;
+    }
+  
+    .form-all {
+      background-image: none;
+    }
+  
+  .ie-8 .form-all:before { display: none; }
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+  
+  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/buttons/form-submit-button-light.css?3.3.13076"/>
+<form class="jotform-form" action="https://submit.jotformeu.com/submit/92672541682362/" method="post" name="form_92672541682362" id="92672541682362" accept-charset="utf-8">
+  <input type="hidden" name="formID" value="92672541682362" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_18" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group ">
+          <div class="header-text httal htvam">
+            <h1 id="header_18" class="form-header" data-component="header">
+              Reservation Form
+            </h1>
+            <div id="subHeader_18" class="form-subHeader">
+              Please fill the form below accurately to enable us serve you better!.. welcome!
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_20">
+        <label class="form-label form-label-left form-label-auto" id="label_20" for="first_20">
+          Full Name:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_20" class="form-input jf-required">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" id="first_20" name="q20_fullName[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_20 sublabel_20_first" required="" />
+              <label class="form-sub-label" for="first_20" id="sublabel_20_first" style="min-height:13px"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="text" id="last_20" name="q20_fullName[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_20 sublabel_20_last" required="" />
+              <label class="form-sub-label" for="last_20" id="sublabel_20_last" style="min-height:13px"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_21">
+        <label class="form-label form-label-left form-label-auto" id="label_21" for="input_21">
+          E-mail:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_21" class="form-input jf-required">
+          <input type="email" id="input_21" name="q21_email" class="form-textbox validate[required, Email]" size="30" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_21" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_6">
+        <label class="form-label form-label-left form-label-auto" id="label_6" for="input_6">
+          Phone:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_6" class="form-input jf-required">
+          <input type="text" id="input_6" name="q6_phone" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" maxLength="100" placeholder=" " data-component="textbox" aria-labelledby="label_6" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_17">
+        <label class="form-label form-label-left form-label-auto" id="label_17" for="input_17">
+          Number of Guests:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_17" class="form-input jf-required">
+          <input type="text" id="input_17" name="q17_numberOf" data-type="input-textbox" class="form-textbox validate[required, Numeric]" size="3" value="" maxLength="100" placeholder=" " data-component="textbox" aria-labelledby="label_17" required="" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_datetime" id="id_5">
+        <label class="form-label form-label-left form-label-auto" id="label_5" for="month_5">
+          Date:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input jf-required">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="tel" class="form-textbox validate[required, limitDate]" id="month_5" name="q5_date[month]" size="2" data-maxlength="2" value="09" required="" aria-labelledby="label_5 sublabel_5_month" />
+              <span class="date-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="month_5" id="sublabel_5_month" style="min-height:13px"> Month </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="tel" class="currentDate form-textbox validate[required, limitDate]" id="day_5" name="q5_date[day]" size="2" data-maxlength="2" value="25" required="" aria-labelledby="label_5 sublabel_5_day" />
+              <span class="date-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="day_5" id="sublabel_5_day" style="min-height:13px"> Day </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <input type="tel" class="form-textbox validate[required, limitDate]" id="year_5" name="q5_date[year]" size="4" data-maxlength="4" value="2019" required="" aria-labelledby="label_5 sublabel_5_year" />
+              <label class="form-sub-label" for="year_5" id="sublabel_5_year" style="min-height:13px"> Year </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top">
+              <img class="showAutoCalendar" alt="Pick a Date" id="input_5_pick" src="https://cdn.jotfor.ms/images/calendar.png" style="vertical-align:middle;margin-left:5px" data-component="datetime" aria-hidden="true" />
+              <label class="form-sub-label" for="input_5_pick" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap"> Date Picker Icon </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_12">
+        <label class="form-label form-label-left" id="label_12" for="input_12">
+         
+          <span class="form-required">
+          
+          </span>
+        </label>
+        <div id="cid_12" class="form-input jf-required">
+          <select class="form-dropdown validate[required]" id="input_12" name="q12_time" style="width:150px" data-component="dropdown" required="" aria-labelledby="label_12">
+            <option value="">  </option>
+            <option value="1 pm"> 1 pm </option>
+            <option value="2 pm"> 2 pm </option>
+            <option value="3 pm"> 3 pm </option>
+            <option value="4 pm"> 4 pm </option>
+            <option value="5 pm"> 5 pm </option>
+            <option value="6 pm"> 6 pm </option>
+            <option value="7 pm"> 7 pm </option>
+            <option value="8 pm"> 8 pm </option>
+            <option value="9 pm"> 9 pm </option>
+            <option value="10 pm"> 10 pm </option>
+            <option value="11 pm"> 11 pm </option>
+            <option value="12 am"> 12 am </option>
+            <option value="1 am"> 1 am </option>
+            <option value="2 am"> 2 am </option>
+            <option value="3 am"> 3 am </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_13">
+        <label class="form-label form-label-left form-label-auto" id="label_13" for="input_13">
+          Table Reservation:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_13" class="form-input jf-required">
+          <select class="form-dropdown validate[required]" id="input_13" name="q13_tableReservation" style="width:150px" data-component="dropdown" required="" aria-labelledby="label_13">
+            <option value="">  </option>
+            <option value="Yes"> Yes </option>
+            <option value="No"> No </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_16">
+        <label class="form-label form-label-left form-label-auto" id="label_16" for="input_16">
+          Reservation Type:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_16" class="form-input jf-required">
+          <select class="form-dropdown validate[required]" id="input_16" name="q16_reservationType" style="width:150px" data-component="dropdown" required="" aria-labelledby="label_16">
+            <option value="">  </option>
+            <option value="Dinner"> Dinner </option>
+            <option value="VIP/Mezzanine"> VIP/Mezzanine </option>
+            <option value="Birthday/ Anniversary"> Birthday/ Anniversary </option>
+            <option value="Nightlife"> Nightlife </option>
+            <option value="Private"> Private </option>
+            <option value="Wedding"> Wedding </option>
+            <option value="Corporate"> Corporate </option>
+            <option value="Holiday"> Holiday </option>
+            <option value="Other"> Other </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_22">
+        <label class="form-label form-label-left form-label-auto" id="label_22" for="input_22"> If Other above, please specify? </label>
+        <div id="cid_22" class="form-input">
+          <input type="text" id="input_22" name="q22_ifOther" data-type="input-textbox" class="form-textbox" size="20" value="" placeholder=" " data-component="textbox" aria-labelledby="label_22" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_7">
+        <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7"> Any Special Request? </label>
+        <div id="cid_7" class="form-input">
+          <textarea id="input_7" class="form-textarea" name="q7_anySpecial" cols="40" rows="5" data-component="textarea" aria-labelledby="label_7"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_1">
+        <div id="cid_1" class="form-input-wide">
+          <div style="margin-left:156px" class="form-buttons-wrapper ">
+            <button id="input_1" type="submit" class="form-submit-button form-submit-button-light" data-component="button">
+              Submit Form
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <input type="hidden" id="simple_spc" name="simple_spc" value="92672541682362" />
+  <script type="text/javascript">
+  document.getElementById("si" + "mple" + "_spc").value = "92672541682362-92672541682362";
+  </script>
+  <div class="formFooter-heightMask">
+  </div>
+  <div class="formFooter f6">
+    <a href="#" target="_blank" class="formFooter-logoLink"><img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo/logo-new@1x.png" alt="" style="height: 44px;"></a>
+    <div class="formFooter-rightSide">
+      <span class="formFooter-text">
+        Now create your own JotForm - It's free!
+      </span>
+      <a class="formFooter-button" href="#" target="_blank">Create your own JotForm</a>
+    </div>
+  </div>
+</form>

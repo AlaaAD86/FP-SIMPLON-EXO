@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+article:nth-child(1){
+    width: 100%;
+    height: 20%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    transition: 200ms ease-in;
+    
+    
+}
+
+article:nth-child(2){
+    width: 100%;
+    height: 5%;
+    background: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    transition: 200ms ease-in;
+}
+
+article:nth-child(3){
+    width: 100%;
+    height: 45%;
+    background: rgb(58, 0, 0);
+    transition: 200ms ease-in;
+}
+
+article:nth-child(4){
+    width: 100%;
+    height: 40%;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    transition: 200ms ease-in;
+}
+
+.head {
+    width: 15%;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+
+
+/* ----------eyes-------------- */
+
+.eyes{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.eyes .eyeOne{
+    background-color: red;
+    width: 25%;
+    height: 55%;
+    border: solid rgb(0, 0, 0) 4px;
+    border-radius: 100%;
+    align-self: center;
+    animation-duration: 1s;
+    animation-name: eyeL;
+    animation-iteration-count: infinite;
+}
+
+.eyes .eyeTwo{
+    background-color: red;
+    width: 25%;
+    height: 55%;
+    border: solid rgb(0, 0, 0) 4px;
+    border-radius: 100%;
+    align-self: center;
+    animation-duration: 1s;
+    animation-name: eyeR;
+    animation-iteration-count: infinite;
+}
+
+
+/* ----------BOUCHE-------------- */
+
+
+.head .bouche {
+    background-color: rgb(114, 114, 114);
+    width: 50%;
+    height: 8%;
+    align-self: center;
+}
+
+
+
+/* ----------COU-------------- */
+
+.cou {
+    width: 5%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+
+/* ----------CORPS ET BRAS-------------- */
+
+.corps {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    width: 8%;
+    height: 100%;
+    background-color: aliceblue;
+    transform-origin: top center;
+    animation-duration: 3s;
+    animation-name: moveL;
+    animation-iteration-count: infinite;
+}
+
+.ventre{
+    width: 25%;
+    height: 100%;
+    background-color: aliceblue;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+.right{
+    width: 8%;
+    height: 100%;
+    background-color: aliceblue;
+    animation-duration: 3s;
+    animation-name: moveR;
+    animation-iteration-count: infinite;
+    transform-origin: top center;
+}
+
+
+/* ----------JAMBES ET PIEDS -------------- */
+
+
+
+.leftSide {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.rightSide {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-left: 1%;
+}
+
+
+.leftSide .jambesL{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue; 
+    margin-right: 1%;
+}
+
+.leftSide .piedL{
+    width: 100%;
+    height: 50%;
+    background-color: yellow; 
+    margin-right: 1%;
+    margin-top: 6%;
+}
+
+
+.rightSide .jambesR{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue; 
+    margin-right: 1%;
+}
+
+.rightSide .piedR{
+    width: 100%;
+    height: 50%;
+    background-color: yellow; 
+    margin-right: 1%;
+    margin-top: 6%;
+}
+
+
+
+/* ----------ANIMATION------------ */
+
+
+@keyframes moveR {
+    from {
+        transform: rotate(200deg);
+    }
+    50%{
+        transform: rotate(350deg);
+    }
+    to {
+        transform: rotate(200deg);
+    }
+}
+
+@keyframes moveL {
+    from {
+        transform: rotate(-200deg);
+    }
+    50%{
+        transform: rotate(-350deg);
+    }
+    to {
+        transform: rotate(-200deg);
+    }
+}
+
+@keyframes eyeL {
+    from {
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+}
+
+@keyframes eyeR {
+    from {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* 
+.bouge {
+    background: red;
+    
+} */

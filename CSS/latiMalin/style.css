@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    background-color: #646464; 
+}
+ul {
+    display: flex;
+    justify-content: right;
+}
+ul li{
+    padding: 15px;
+    list-style: none;
+    margin-right: 1%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+}
+
+ul li a:hover{
+    background-color: gray;
+}
+
+h1 {
+    padding: 20px;
+}
+
+hr{
+    margin: auto;
+    width: 98%;
+}
+.main{
+    margin: 1%;
+    width: 98%;
+    border: #646464 solid 1px;
+}
+.container {
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+p{
+
+    margin-left: 1%;
+    line-height: 25px;
+    text-align: justify;
+    padding: 1%;
+}
+
+
+.img{
+    width: 15%;
+   margin: auto;
+}
+
+.container2 {
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+}
+
+
+.container3 {
+    margin: auto;
+    margin-top: 1%;
+    justify-content: center;
+}
+
+.float-img{
+    float: left;
+   margin: 10px;
+}
+
+.text-float{
+    margin-left: 1%;
+    line-height: 25px;
+    text-align: justify;
+    padding: 1%;
+}
+
+.poussin{
+    float: left;
+    width: 15%;
+}

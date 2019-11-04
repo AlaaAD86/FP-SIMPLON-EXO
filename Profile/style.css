@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Fredoka+One|Josefin+Sans:400,700|Nunito:400,400i,600,700,800|Permanent+Marker|Philosopher:400,400i,700,700i&display=swap');
+
+
+/* 
+
+font-family: 'Philosopher', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Acme', sans-serif;
+font-family: 'Fredoka One', cursive;
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body, .grid-container {
+    height: 98%;
+    width: 99%;
+    margin: auto;
+    margin-top: .5%;
+    background-color: #7600ac;
+    
+}
+
+
+
+.grid-container {
+    height: 98%;
+    width: 99%;
+    margin: auto;
+    margin-top: .5%;
+}
+
+
+ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    
+}
+ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+ul li:nth-child(3n) {
+    padding-right: 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Fredoka One', cursive;
+}
+
+ul li:hover {
+    background-color: #5c2c2a;
+}
+/* ------------------- DEFINE ELEMENTS IN GRID CONTAINER ------------------------  */
+.photo { 
+    grid-area: photo; 
+    background-color: #A0454A;
+}
+
+.home { 
+    grid-area: home; 
+    background-color: rgb(193, 0, 231);
+}
+.comptence-metier { 
+    grid-area: CompM; 
+    background-color: #573B53;
+}
+.nav { 
+    background-color: #644140;
+    grid-area: nav;  
+}
+
+.logout { 
+    grid-area: logout;
+    background-color: #2D0023;
+}
+
+.design { 
+    grid-area: DSG;  
+    background-color: #313932; 
+}
+.competence-tech { 
+    grid-area: Tec;  
+    background-color: #F5BF00; 
+    
+}
+.softskills { 
+    grid-area: S-S;  
+    background-color: #576658;
+} 
+
+.interets { 
+    grid-area: inter;  
+    background-color: #7CD1C8;
+} 
+
+.autre { 
+    grid-area: autre;  
+    background-color: #6AA551;
+} 
+
+.contact { 
+    grid-area: CTC;  
+    background-color: #F76128;
+} 
+
+/* ------------------- GRID CONTAINER ------------------------  */
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:
+    "photo photo photo photo nav nav nav nav nav nav home logout"
+    "photo photo photo photo S-S S-S S-S S-S Tec Tec inter inter"
+    "photo photo photo photo S-S S-S S-S S-S Tec Tec inter inter"
+    "photo photo photo photo S-S S-S S-S S-S Tec Tec inter inter"
+    "photo photo photo photo S-S S-S S-S S-S Tec Tec inter inter"
+    "CompM CompM CompM CompM S-S S-S S-S S-S Tec Tec inter inter"
+    "CompM CompM CompM CompM S-S S-S S-S S-S Tec Tec inter inter"
+    "CompM CompM CompM CompM S-S S-S S-S S-S Tec Tec autre autre"
+    "CompM CompM CompM CompM S-S S-S S-S S-S Tec Tec autre autre"
+    "CompM CompM CompM CompM DSG DSG DSG DSG Tec Tec autre autre"
+    "CompM CompM CompM CompM DSG DSG DSG DSG Tec Tec autre autre"
+    "CompM CompM CompM CompM DSG DSG DSG DSG CTC CTC CTC CTC"
+
+}
+
+
+
+ /* =========================================================== contact CSS ======================================= */
+
+ .logout h3 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+
+ .logout {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.logout:hover .flip{
+    transform: rotateX(180deg);
+}
+
+
+
+.logout .front {
+    background: #2D0023;
+    color: white;
+}
+
+.logout .back{
+    background: #2D0023;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+ /* =========================================================== contact CSS ======================================= */
+
+ .home h3 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.home {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.home:hover .flip{
+    transform: rotateY(180deg);
+}
+
+
+
+.home .front {
+    background: rgb(216, 20, 255);
+    color: white;
+}
+
+.home .back{
+    background: rgb(215, 14, 255);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+ /* =========================================================== contact CSS ======================================= */
+
+
+ .contact h3 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.contact {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.contact:hover .flip{
+    transform: rotateX(180deg);
+}
+
+
+
+.contact .front {
+    background: #F76128;
+    color: white;
+}
+
+.contact .back{
+    background: #F76128;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+
+ /* =========================================================== softskills CSS ======================================= */
+
+
+ .softskills h3 {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 35%;
+}
+
+.softskills {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.softskills:hover .flip{
+    transform: rotateX(180deg);
+}
+
+
+
+.softskills .front {
+    background: #576658;
+    color: white;
+}
+
+.softskills .back{
+    background: #576658;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+
+
+ /* =========================================================== competence-tech CSS ======================================= */
+
+
+ .competence-tech h3 {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 35%;
+}
+
+.competence-tech {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.competence-tech:hover .flip{
+    transform: rotateY(180deg);
+}
+
+
+
+.competence-tech .front {
+    background: #F5BF00;
+    color: white;
+}
+
+.competence-tech .back{
+    background: #F5BF00;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+ /* =========================================================== Nav CSS ======================================= */
+
+
+ .nav h3 {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.nav {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.nav:hover .flip{
+    transform: rotateX(180deg);
+}
+
+
+
+.nav .front {
+    background: #644140;
+    color: white;
+}
+
+.nav .back{
+    background: #644140;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+
+ /* =========================================================== interets CSS ======================================= */
+
+
+ .interets h3 {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.interets {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.interets:hover .flip{
+    transform: rotateX(180deg);
+}
+
+
+
+.interets .front {
+    background: #7CD1C8;
+    color: white;
+}
+
+.interets .back{
+    background: #7CD1C8;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+
+ /* =========================================================== Autre CSS ======================================= */
+
+
+ .autre h3 {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 35%;
+}
+
+.autre {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.autre:hover .flip{
+    transform: rotateX(180deg);
+}
+
+
+
+.autre .front {
+    background: #6AA551;
+    color: white;
+}
+
+.autre .back{
+    background: #6AA551;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+
+ /* =========================================================== P H O T O CSS ======================================= */
+
+
+ .photo h3 {
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 25%;
+}
+
+.photo {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.photo:hover .flip{
+    transform: rotateY(180deg);
+}
+
+
+
+.photo .front {
+    background: #A0454A;
+    color: white;
+}
+
+.photo .back{
+    background: rgb(155, 54, 59);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+
+
+ /* =========================================================== M E T I E R CSS ======================================= */
+
+
+ .comptence-metier h3 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin: auto;
+    margin-top: 35%;
+}
+
+.comptence-metier {
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.comptence-metier:hover .flip{
+    transform: rotateX(180deg);
+}
+
+
+
+.comptence-metier .front {
+    background: #573B53;
+    color: white;
+}
+
+.comptence-metier .back{
+    background: rgb(51, 31, 48);
+    color: white;
+    transform: rotateX(180deg);
+}
+
+
+
+
+ /* =========================================================== DESIGN CSS ======================================= */
+
+
+.design h3 {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    margin-top: 18%;
+}
+
+.design{
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.flip{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.design:hover .flip{
+    transform: rotateX(180deg);
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;  
+}
+
+.design .front {
+    background: red;
+    color: white;
+}
+
+.design .back{
+    background: rgb(92, 0, 0);
+    color: white;
+    transform: rotateX(180deg);
+}
+
+
+

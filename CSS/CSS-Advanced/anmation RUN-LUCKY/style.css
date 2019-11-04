@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.bg {
+    width: 100%;
+}
+.perspective {
+    position: absolute;
+    perspective: 550px;
+    top: 18%;
+    left: 60%;
+}
+.gerald{
+    width: 350px;
+    height: 140px;
+    transform: translateZ(35px) rotateY(-25deg) ;
+}
+
+.car{
+    position: absolute;
+    top: 510px;
+    width: 10%;
+    animation-fill-mode: forwards;
+    animation-name: car;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.police {
+
+    position: absolute;
+    width: 10%;
+    top: 510px;
+    /* animation-fill-mode: forwards;
+    animation-name: police;
+    animation-duration: 4s;
+    animation-timing-function: linear;  */
+    
+    animation: police 2.3s linear 1s forwards,
+                fall 1s linear 3.3s forwards;
+                
+}
+
+
+.trap1{
+    position: absolute;
+    top: 565px;
+    left: 30%;
+    width: 3.5%;
+    opacity: 0;
+    transform: rotate(45deg) translateX(10px);
+    animation-fill-mode: forwards;
+    animation-name: trap1;
+    animation-delay: 3s;
+    animation-duration: 200ms;
+}
+
+.trap2{
+    position: absolute;
+    top: 565px;
+    left: 34%;
+    width: 3.5%;
+    opacity: 0;
+    transform: rotate(-135deg) translateX(-10px);
+    animation-fill-mode: forwards;
+    animation-name: trap2;
+    animation-delay: 3s;
+    animation-duration: 200ms;
+}
+
+
+
+
+@keyframes car {
+    from {
+        transform: translate(1250px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+@keyframes police {
+
+    from {transform: translate(1240px);}
+    to{transform: translate(480px);}
+}  
+
+@keyframes fall {
+
+    from {transform: translate(480px);}
+    to{transform: translateY(180px) translateX(250px) rotate(145deg);}
+}  
+
+
+
+@keyframes  trap1 {
+
+    from { opacity: 0; transform: rotate(45deg) translateX(10px);}
+    to{ transform: rotate(145deg) translateX(20px) translateY(-20px) ; opacity: 1;}
+}
+
+
+@keyframes  trap2 {
+
+    from {transform: rotate(-135deg) translateX(-10px); }
+    to{ transform: rotate(-235deg) translateX(10px) translateY(-30px);opacity: 1;}
+}

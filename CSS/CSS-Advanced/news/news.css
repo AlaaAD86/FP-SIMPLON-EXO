@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100;
+    height: 100vh;
+    background: rgb(56, 56, 56);
+}
+
+section {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    background: #D6D6D6;
+    
+}
+
+
+.australie, 
+.chine,
+.usa,
+.desert,
+.turquie,
+.indonesie,
+.maurice,
+.cambodge,
+.croatie,
+.seychelles {
+    padding: 2px;
+    border: black solid 2px;
+    align-content: center;
+    
+}  
+
+
+/* ---------------------------------------row 1 --------------------------- */
+.australie {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    background-image: url("paysage_1.webp");
+    background-position: 25% 50%;
+    transition: .8s ease-in;
+    
+}
+
+
+.australie:hover{
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+
+.chine {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    background-image: url("paysage_2.webp");
+    background-position: 25% 50%;
+    transition: .8s ease-in
+}
+.chine:hover {
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+
+.usa {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    background-image: url("paysage_3.webp");
+    background-position: 25% 50%;
+    transition: .8s ease-in
+}
+
+.usa:hover {
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+
+.chine:hover {
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+/* ---------------------------------------row 2 --------------------------- */
+.desert {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    background-image: url("paysage_4.webp");
+    background-position: 25% 30%;
+    transition: .8s ease-in
+}
+
+.desert:hover {
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+
+.indonesie {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    background-image: url("paysage_5.webp");
+    background-position: 25% 50%;
+    transition: .8s ease-in
+}
+
+.indonesie:hover {
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+
+.turquie {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    background-image: url("paysage_6.webp");
+    background-position: 25% 50%;
+    transition: .8s ease-in
+}
+
+.turquie:hover {
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+/* ---------------------------------------row 3 --------------------------- */
+.maurice {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url("paysage_7.webp");
+    background-position: 25% 50%;
+    transition: .8s ease-in
+}
+
+.maurice:hover {
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+
+.cambodge {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-image: url("paysage_8.webp");
+    background-position: 25% 50%;
+    transition: .8s ease-in
+}
+
+.cambodge:hover {
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+
+.croatie {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-image: url("paysage_9.webp");
+    background-position: 25% 50%;
+    transition: .8s ease-in
+}
+
+.croatie:hover {
+    cursor: pointer;
+    background-position: 45% 75%;
+}
+
+
+
+h2 {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #D6D6D6;
+    text-shadow: 0px 0px 10px black;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    top: 75%;
+    background-color: rgba(0, 0, 0, 0.226);
+    opacity: 0;
+    transition: 0.5s
+}
+
+
+
+
+.australie:hover  h2, 
+.chine:hover  h2,
+.usa:hover  h2,
+.desert:hover  h2,
+.turquie:hover h2 ,
+.indonesie:hover h2,
+.maurice:hover h2,
+.cambodge:hover  h2,
+.croatie:hover h2
+ {
+    opacity: 1;
+}
